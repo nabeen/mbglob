@@ -66,6 +66,14 @@ class MbGlob:
 
         return glob.glob(pathname, recursive=recursive)
 
+    def convert(self, target: str) -> str:
+        """
+        convert only
+        :param target:
+        :return:
+        """
+        return self.__convert_multi_byte(target)
+
     def __convert_multi_byte(self, target: str) -> str:
         """
         target string convert for multi byte
