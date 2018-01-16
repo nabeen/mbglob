@@ -12,7 +12,7 @@ def main():
 
     setup(
         name='mbglob',
-        version='0.0.2',
+        version='0.0.3',
         author='nabeen',
         author_email='watanabe_kenichiro@hasigo.co.jp',
         url='https://github.com/nabeen/mbglob',

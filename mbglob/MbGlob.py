@@ -54,7 +54,7 @@ class MbGlob:
         except Exception:
             raise
 
-    def glob(self, pathname: str, recursive=False) -> list:
+    def glob(self, pathname: str) -> list:
         """
         glob exec
         :param pathname:
@@ -64,7 +64,7 @@ class MbGlob:
         # convert for multi byte
         pathname = self.__convert_multi_byte(pathname)
 
-        return glob.glob(pathname, recursive=recursive)
+        return glob.glob(pathname)
 
     def convert(self, target: str) -> str:
         """
